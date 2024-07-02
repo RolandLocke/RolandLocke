@@ -3,17 +3,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Roland Locke-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: "inter-30", sans-serif;
             margin: 0;
             padding: 0;
-            color: #333;
+            color: #333333;
         }
         header {
+            font: 'inter-800', sans-serif;
             background-image: url("https://github.com/RolandLocke/RolandLocke/blob/main/IMG_8839.JPEG?raw=true");
             background-size: cover;
             background-position: center;
+            background-attachment: fixed;
             color: white;
             padding: 20vw 0;
             padding-left: 20vw;
@@ -21,8 +26,39 @@
             text-align: left;  
             position: relative; 
             font-size: 1.6rem;
-            font-family: 'roboto-bold', sans-serif;
-            font-weight: bold;
+        }
+        .intro-image-pos {
+            position: absolute;
+            top: 50%;
+            left: 40%;
+            transform: translate(-50%, -50%); /*Offsets the position to true */
+        }
+        .intro-image1 {
+            width: 65%;
+            height: auto;
+            z-index: 1;
+            transform: translate(-50%, -50%); /*Offsets the position to true */
+        }
+        .intro-image2 {
+            width: 50%;
+            height: auto;
+            z-index: 3;
+        }
+        .intro-text {
+            position: absolute;
+            z-index: 4;
+            top: 37%;
+            left: 19%;
+        }
+        .picture-Frame {
+            position: absolute;
+            z-index: 4;
+            width: 13%;
+            height: auto;
+            top: 45%;
+            left: 55%;
+            padding: 10px;
+            transform: translate(-50%, -50%); /*Offsets the position to true */
         }
         nav {
             position: absolute;
@@ -38,7 +74,8 @@
         nav a {
             margin: 0 1em;
             text-decoration: none;
-            color: #333;
+            color: #F1FAB7;;
+            font-family: "inter-30", sans-serif;
         }
         section {
             padding: 2em;
@@ -49,19 +86,38 @@
             text-align: center;
             padding: 1em 0;
         }
-        .roboto-bold {
-            font-family: "Roboto", sans-serif;
-            font-weight: 700;
-            font-style: normal;
+        .inter-800 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 30;
+            font-style: bold;
+            font-variation-settings:"slnt" 0;
+        }
+        .inter-30 {
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: bold;
+            font-variation-settings:"slnt" 0;
+        }
+        .image-button {
+            background-color: #eeeeee00;
+            background-size: cover;
+            background-position: center;
+            width: 40px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 4;
+            margin-left: 20px;
+            margin-top: 190px;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- embed code for google fonts -->
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!-- embed code for google fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> <!-- embed code for google fonts -->
     <nav>
         <a href="#home">Home</a>
         <a href="#about">About Me</a>
@@ -69,9 +125,21 @@
         <a href="#education">Education</a>
         <a href="#contact">Contact</a>
     </nav>
-    <p>Hi, my name is</p>
-    <h1>Roland Locke.</h1>
-    <h2>This is my portfolio.</h2>
+    <div>
+        <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\IntroRectangle2.png" class="intro-image1 intro-image-pos">
+        <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\IntroRectangle.png" class="intro-image2 intro-image-pos">
+        <div class="intro-text">
+            <p style="color: #E29454; margin : 10px;">Hello, my name is</p>
+            <h1 style="color: #F1FAB7; margin : 10px;">Roland Locke.</h1>
+            <p style="color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
+        </div>
+        <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\Picture Frame.png" class="picture-Frame">
+        <div>
+            <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/LinkedInLogo.png')" class="image-button" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
+            <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/GitHubLogo.png')" class="image-button" onclick="location.href='https://github.com/RolandLocke'"></button>
+            <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/InstagramLogo.png')" class="image-button" onclick="location.href='https://www.instagram.com/roland_locke/'"></button>
+        </div>
+    </div>
 </header>
 
 <section id="home">
