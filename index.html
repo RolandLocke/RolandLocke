@@ -66,7 +66,7 @@
             left: 0;
             width: 97%; /*covers the width of the header*/
             margin: 0;
-            padding-top: 2vw;
+            padding-top: 1vw;
             background: #f1f1f100;
             text-align: right;
             font-size: 1rem;
@@ -74,7 +74,7 @@
         nav a {
             margin: 0 1em;
             text-decoration: none;
-            color: #F1FAB7;;
+            color: #F9DA88;;
             font-family: "inter-30", sans-serif;
         }
         section {
@@ -113,7 +113,7 @@
             margin-left: 20px;
             margin-top: 100px;
         }
-        .resume-button {
+        .contact-button {
             background-color: #eeeeee00;
             background-size: contain;
             background-position: center;
@@ -124,9 +124,19 @@
             cursor: pointer;
             position: relative;
             z-index: 4;
-            top: 10vw;
-            left: 30.7vw;
-            margin-top: 30px;
+        }
+        .contact-button2 {
+            background-color: #eeeeee00;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            border: none;
+            cursor: pointer;
+            position: relative;
+            z-index: 4;
+            width:120px; 
+            height:35px;
+            top: 10px;
         }
         .image-button:hover {
             filter: brightness(0.6);
@@ -144,18 +154,18 @@
         <a href="#about">About Me</a>
         <a href="#experience">Experience</a>
         <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
+        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');" class="contact-button2" onclick=email()></button>
     </nav>
-    <div>
+    <div style="top: 10vw">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle2.png?raw=true" class="intro-image1 intro-image-pos">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle.png?raw=true" class="intro-image2 intro-image-pos">
         <div class="intro-text">
             <p style="color: #E29454; margin : 10px;">Hello, my name is</p>
-            <h1 style="color: #F1FAB7; margin : 10px;">Roland Locke.</h1>
+            <h1 style="color: #F9DA88; margin : 10px;">Roland Locke.</h1>
             <p style="color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
         </div>
         <img src='https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/Picture%20Frame.png?raw=true' class="picture-Frame">
-        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ResumeButton.png')" class="resume-button" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
+        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');top: 10vw; left: 30.7vw; margin-top: 30px;" class="contact-button" onclick=email()></button>
         <div>
             <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LinkedInLogo.png?raw=true')" class="image-button" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
             <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/GitHubLogo.png?raw=true')" class="image-button" onclick="location.href='https://github.com/RolandLocke'"></button>
@@ -190,4 +200,11 @@
 </section>
 
 </body>
+
+<script>
+    function email() {
+        window.location.href = 'mailto:locker@dickinson.edu?subject=Subject&body=Body%20text';
+    }
+</script>
+
 </html>
