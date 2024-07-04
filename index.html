@@ -16,7 +16,6 @@
         header {
             font: 'inter-800', sans-serif;
             background-image: url("https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IMG_8839.JPEG?raw=true");
-            background-size: cover;
             background-position: center;
             background-attachment: fixed;
             color: white;
@@ -138,10 +137,7 @@
             height:35px;
             top: 10px;
         }
-        .image-button:hover {
-            filter: brightness(0.6);
-        }
-        .resume-button:hover {
+        .buttonHover:hover {
             filter: brightness(0.6);
         }
     </style>
@@ -150,26 +146,26 @@
 
 <header>
     <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About Me</a>
-        <a href="#experience">Experience</a>
-        <a href="#education">Education</a>
-        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');" class="contact-button2" onclick=email()></button>
+        <a href="#home" class="buttonHover">Home</a>
+        <a href="#about" class="buttonHover">About Me</a>
+        <a href="#experience" class="buttonHover">Experience</a>
+        <a href="#education" class="buttonHover">Education</a>
+        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');" class="contact-button2 buttonHover" onclick=email()></button>
     </nav>
     <div style="top: 10vw">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle2.png?raw=true" class="intro-image1 intro-image-pos">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle.png?raw=true" class="intro-image2 intro-image-pos">
         <div class="intro-text">
-            <p style="color: #E29454; margin : 10px;">Hello, my name is</p>
-            <h1 style="color: #F9DA88; margin : 10px;">Roland Locke.</h1>
-            <p style="color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
+            <p style="font-size: 1.5vw; color: #E29454; margin : 10px;">Hello, my name is</p>
+            <h1 style="font-size: 3vw; color: #F9DA88; margin : 10px;">Roland Locke.</h1>
+            <p style="font-size: 1.5vw; color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
         </div>
         <img src='https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/Picture%20Frame.png?raw=true' class="picture-Frame">
-        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');top: 10vw; left: 30.7vw; margin-top: 30px;" class="contact-button" onclick=email()></button>
+        <button style="background-image: url('C:/Users/rolan/Documents/Portfolio/RolandLocke/PictureContent/ContactButton.png');top: 10vw; left: 31vw; margin-top: 2vw;" class="contact-button buttonHover" onclick=email()></button>
         <div>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LinkedInLogo.png?raw=true')" class="image-button" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/GitHubLogo.png?raw=true')" class="image-button" onclick="location.href='https://github.com/RolandLocke'"></button>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/InstagramLogo.png?raw=true')" class="image-button" onclick="location.href='https://www.instagram.com/roland_locke/'"></button>
+            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LinkedInLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
+            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/GitHubLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://github.com/RolandLocke'"></button>
+            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/InstagramLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.instagram.com/roland_locke/'"></button>
         </div>
     </div>
 </header>
