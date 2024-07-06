@@ -26,17 +26,37 @@
             position: relative; 
             font-size: 1.6rem;
         }
+        .container {
+            display: flex;
+            height: 50vh;
+        }
+        .text-box, .image-box {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 20px;
+        }
+        .text-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .image-box img {
+            max-width: 100%;
+            max-height: 100%;
+        }
         .intro-image-pos {
             position: absolute;
             top: 50%;
             left: 40%;
-            transform: translate(-50%, -50%); /*Offsets the position to true */
+            transform: translate(-50%, -50%); /* Offsets the position to true */
         }
         .intro-image1 {
             width: 65%;
             height: auto;
             z-index: 1;
-            transform: translate(-50%, -50%); /*Offsets the position to true */
+            transform: translate(-50%, -50%); /* offsets the position to true */
         }
         .intro-image2 {
             width: 50%;
@@ -171,8 +191,14 @@
 </header>
 
 <section id="home">
-    <h2>Home</h2>
-    <p>Hello! My name is Roland Locke Welcome!</p>
+    <div class="container">
+        <div class="text-box">
+            <p>Hello and welcome</p>
+        </div>
+        <div class="image-box">
+            <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\PictureContent\IntroRectangle2.png">
+        </div>
+    </div>
 </section>
 
 <section id="about">
