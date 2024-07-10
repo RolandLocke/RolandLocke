@@ -155,16 +155,20 @@
         .buttonHover:hover {
             filter: brightness(0.6);
         }
+        h1 {
+            font-size: 2rem;
+            color: #781543;
+        }
     </style>
 </head>
 <body>
 
-<header id="home">
+<header id="Home">
     <nav>
-        <a href="#home" class="buttonHover">Home</a>
-        <a href="#about" class="buttonHover">About Me</a>
-        <a href="#experience" class="buttonHover">Experience</a>
-        <a href="#education" class="buttonHover">Education</a>
+        <a href="#Home" class="buttonHover">Home</a>
+        <a href="#About" class="buttonHover">About Me</a>
+        <a href="#Experience" class="buttonHover">Experience</a>
+        <a href="#Projects" class="buttonHover">Projects</a>
         <button style="background-image: url('https://raw.githubusercontent.com/RolandLocke/RolandLocke/main/PictureContent/ContactButton.png');" class="contact-button2 buttonHover" onclick=email()></button>
     </nav>
     <div style="top: 10vw">
@@ -185,7 +189,7 @@
     </div>
 </header>
 
-<section id="about">
+<section id="About">
     <h1 style="text-align: center;">About Me</h1>
     <div class="container">
         <div class="text-box">
@@ -204,8 +208,51 @@
     </div>
 </section>
 
-<section id="experience">
-    <h1 style="text-align: center;">Experience</h1>
+<section id="Projects">
+    <h1 style="text-align: center; font-size: 2rem;">Projects</h1>
+    <p style="text-align: center; margin-left: 200px; margin-right: 200px;">This section is dedicated to some of the projects I've worked on personally or been involved in the creation of. These projects are examples of work that I am capable of and have guided my interest in computer science and business both through my studies and my personal projects. If there is more information about the project in the form of a website or GitHub project page, a link has been provided.</p>
+</section>
+
+<section>
+    <h2 style="text-align: center;">Disparity Mapping</h2>
+    <div class="container">
+        <div class="text-box">
+            <h3>Disparity Map Estimation</h3>
+            </p>
+            Disparity mapping uses a set of two 2D images taken centimeters apart(called stereo images) to form a depth map of the space. In a research project, I explored the parameters for disparity map creation in situations with unusual subjects and lighting (this process is usually performed by trial and error).I created a program that generated many disparity maps each with a differing value. The image to the left is an output from the program comparing the disparity maps of a cat whose fur creates a challenging scenario for a disparity map. In the disparity map, the brighter areas are closer to the camera and the darker ones are further.
+            <a href="https://github.com/University-Of-Otago-COMP342/.github/blob/main/Roland%20Locke's%20Assignment2.docx">Paper</a>
+            
+            <a href="https://github.com/University-Of-Otago-COMP342/Features2024">GitHub Repo</a> </p>
+        </div>
+        <div class="image-box">
+            <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\PictureContent\CatPicture.png" alt="Image of cat used to create disparity maps">
+        </div>
+        <div class="image-box">
+            <img src="c:\Users\rolan\Documents\Portfolio\RolandLocke\PictureContent\CatDsiparityMap.png" alt="Disparity maps of Cat image">
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2 style="text-align: center;">FarmData2</h2>
+    <div class="container">
+        <div class="image-box">
+            <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\PictureContent\FarmDataSeedingInput.png" alt="Image of the FarmData2 Seeding Input form">
+        </div>
+        <div class="text-box">
+            <h3>FarmData2 Contributer</h3>
+            FarmData2 is an open source web app designed to help manage small organic farms. I was a member of a team that worked to improve this product and the documentation for it. The database and web interface allows the manager of farms to track seeding, livestock, irrigation, and more. While a member of the team, I worked on improving the Seeding Input functionality, both in front-end appearance and in back-end API calls. Additionally, I wrote documentation for the project, including instructions on migrating pull requests across Git forks of a project.
+
+            <a href="https://github.com/DickinsonCollege/FarmData2">Porject Repo</a>
+        </div>
+        <div class="image-box">
+            <img src="C:\Users\rolan\Documents\Portfolio\RolandLocke\PictureContent\FarmData2Docs.png" alt="FarmData2 documentation created by me.">
+        </div>
+    </div>
+</section>
+
+<section id="Experience">
+    <h1 style="text-align: center; font-size: 2rem;">Experience</h1>
     <div class="container">
         <div class="text-box">
             <img style="max-Width: 50px; border-radius: 20px;" src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LeedsGeek.jpg?raw=true">
@@ -223,16 +270,6 @@
             <p>As an intern developed an information help website for clients of the P3 Propane Safety Inspection software. I created a scalable tree-based SQL database. I developed a system to track user interaction using the number of visits and tutorial video watch time. </p>
         </div>
     </div>
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-    <p>Education</p>
-</section>
-
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Contact details</p>
 </section>
 
 </body>
