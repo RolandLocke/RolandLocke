@@ -56,36 +56,34 @@
         }
         .intro-image-pos {
             position: absolute;
-            top: 50%;
-            left: 40%;
-            transform: translate(-50%, -50%); /* Offsets the position to true */
+            justify-content: center;
         }
         .intro-image1 {
-            width: 65%;
+            width: 75%;
             height: auto;
             z-index: 1;
-            transform: translate(-50%, -50%); /* offsets the position to true */
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
         }
         .intro-image2 {
-            width: 50%;
+            width: 60%;
             height: auto;
-            z-index: 3;
-        }
-        .intro-text {
-            position: absolute;
-            z-index: 4;
-            top: 37%;
-            left: 19%;
+            z-index: 2;
+            position: absolute; 
+            top: 50%; 
+            left: 50%; 
+            transform: translate(-50%, -50%);
         }
         .picture-Frame {
             position: absolute;
+            margin: 100px;
             z-index: 4;
             width: 13%;
             height: auto;
-            top: 45%;
-            left: 55%;
             padding: 10px;
-            transform: translate(-50%, -50%); /*Offsets the position to true */
+            transform: translate(-50%, -50%);
         }
         nav {
             position: fixed;
@@ -108,12 +106,6 @@
         section {
             padding: 2em;
         }
-        footer {
-            background-color: #4CAF50;
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
         .image-button {
             background-color: #eeeeee00;
             background-size: cover;
@@ -124,8 +116,8 @@
             cursor: pointer;
             position: relative;
             z-index: 4;
-            margin-left: 20px;
-            margin-top: 100px;
+            margin-left: 6%;
+            margin-top: 10%;
         }
         .contact-button {
             background-color: #eeeeee00;
@@ -136,8 +128,12 @@
             height: 50px;
             border: none;
             cursor: pointer;
-            position: relative;
+            margin: 5%;
+            margin-top:7%;
             z-index: 4;
+            position: absolute; 
+            top: 50%; 
+            transform: translate(-50%, -50%);
         }
         .contact-button2 {
             background-color: #eeeeee00;
@@ -177,20 +173,26 @@
         <a href="#Projects" class="buttonHover">Projects</a>
         <button style="background-image: url('https://raw.githubusercontent.com/RolandLocke/RolandLocke/main/PictureContent/ContactButton.png');" class="contact-button2 buttonHover" onclick=email()></button>
     </nav>
-    <div style="top: 10vw">
+    <div style="top: 10vw; justify-content: center;">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle2.png?raw=true" class="intro-image1 intro-image-pos">
         <img src="https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/IntroRectangle.png?raw=true" class="intro-image2 intro-image-pos">
-        <div class="intro-text">
-            <p style="font-size: 1.5vw; color: #E29454; margin : 10px;">Hello, my name is</p>
-            <h1 style="font-size: 3vw; color: #F9DA88; margin : 10px;">Roland Locke.</h1>
-            <p style="font-size: 1.5vw; color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
-        </div>
-        <img src='https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/Picture%20Frame.png?raw=true' class="picture-Frame">
-        <button style="background-image: url('https://raw.githubusercontent.com/RolandLocke/RolandLocke/main/PictureContent/ContactButton.png');top: 10vw; left: 31vw; margin-top: 2vw;" class="contact-button buttonHover" onclick=email()></button>
-        <div>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LinkedInLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/GitHubLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://github.com/RolandLocke'"></button>
-            <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/InstagramLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.instagram.com/roland_locke/'"></button>
+        <div class="container">
+            <div class="text-box" style="background-color: #eeeeee00;">
+                <div style=" z-index: 4; margin-left: 10%;">
+                    <p style="font-size: 1.5vw; color: #E29454; margin-left: 10px;">Hello, my name is</p>
+                    <h1 style="font-size: 3vw; color: #F9DA88; margin : 10px;">Roland Locke.</h1>
+                    <p style="font-size: 1.5vw; color: #E29454; margin : 10px;">Welcome to my portfolio.</p>
+                </div>
+                <div style="margin-left: 10%;">
+                    <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/LinkedInLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'"></button>
+                    <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/GitHubLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://github.com/RolandLocke'"></button>
+                    <button style="background-image: url('https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/InstagramLogo.png?raw=true')" class="image-button buttonHover" onclick="location.href='https://www.instagram.com/roland_locke/'"></button>
+                </div>
+            </div>
+            <div class="text-box" style="background-color: #eeeeee00;">
+                <img src='https://github.com/RolandLocke/RolandLocke/blob/main/PictureContent/Picture%20Frame.png?raw=true' class="picture-Frame" style="margin:5%;">
+                <button style="background-image: url('https://raw.githubusercontent.com/RolandLocke/RolandLocke/main/PictureContent/ContactButton.png');" class="contact-button buttonHover" onclick=email()></button>
+            </div>
         </div>
     </div>
 </header>
