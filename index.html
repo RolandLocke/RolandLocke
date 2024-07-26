@@ -152,6 +152,17 @@
         .buttonHover:hover {
             filter: brightness(0.6);
         }
+        .mobileWarning {
+            display: none;
+            position: fixed;
+            height: 100%;
+            width: 100%;
+            background: rgb(0, 0, 0);
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            z-index: 8;
+        }
         h1 {
             font-size: 2rem;
             color: #781543;
@@ -161,6 +172,12 @@
             border-radius: 5px;
             margin-left: 50px;
             margin-right: 50px;
+        }
+
+        @media only screen and (max-width: 900px) {
+            .mobileWarning {
+                display: block;
+            }
         }
     </style>
 </head>
@@ -343,6 +360,11 @@
         </div>
     </div>
 </section>
+
+<div class="mobileWarning">
+    <h1 style="text-align: center; color: #ffffff; text-align: center; justify-content: center; margin: 20%;">Please view this page on a larger screen or browser window.</h1>
+    <p class="buttonHover" style="text-align: center; color: #ffffff; text-align: center;" onclick="location.href='https://www.linkedin.com/in/rolandlocke/'">Click here to Vist my Linkedin page instead</p>
+</div>
 
 </body>
 
